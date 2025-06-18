@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+ <head>
+  <title>Layanan SKCK - Polres Boven Digoel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" property="og:title" content="Polres Boven Digoel">
+<meta name="Keywords" content="POLRES, Boven Digoel, Tanah Merah, Papua Selatan">
+<meta name="Description" content="Situs Resmi POLRES Boven Digoel Papua Selatan.">
+<meta property="og:image" content="https://polresbovendigoel.net/favicon/ogimages.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:description" content="Situs Resmi POLRES Boven Digoel Papua Selatan">
+<link rel="icon" type="image/png" href="/favicon/favicon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="POLRES" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="theme-color" content="#ffffff">
+<meta name="author" content="zokishmael">
+<meta name="generator" content="zokishmael app">
+<link rel="canonical" href="https://polresbovendigoel.net">
+<!-- twitter -->
+<meta content="https://polresbovendigoel.net/icons/og-widex.jpg" name="twitter:image">
+<meta content="https://polresbovendigoel.net/icons/og-widex.jpg" name="twitter:image:src">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="POLRES Boven Digoel" name="twitter:title">
+<meta content="https://polresbovendigoel.net/" name="twitter:domain">
+<meta content="Situs Resmi POLRES Boven Digoel" name="twitter:description">
+  <!-- core CSS -->
+  <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/grid.css" rel="stylesheet">
+  <link href="../css/backtop.css" rel="stylesheet">
+  <link href="../css/bootstrap-icons.min.css" rel="stylesheet">
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+ </head>
+ <body>
+<!-- HEADER-->
+  <div include-html="../include/header.html"></div>
+  <main>
+   <!-- judul -->
+   <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal">Layanan SKCK</h1>
+   </div>
+   <!-- konten -->
+   <div class="container">
+   <img class="d-block mx-auto" src="../layanan/skck-1.jpg" alt="" width="100%">
+	 </div>
+<section class="bg-warning text-dark py-3">
+<div class="container">
+  <div class="row ">
+    <div class="text-center">
+<h2 class="fs-2 fw-bold pb-2">Download untuk Android &amp; Ios</h2>
+    </div>
+	 <div class="row py-3  px-5 justify-content-md-center text-center">
+<div class="col col-md-6">
+<a class="col col-md-6 btn btn-success fw-bold py-3 px-4" role="button" href="https://play.google.com/store/apps/details?id=superapps.polri.presisi.presisi" target="_blank" rel="noopener">Playstore</a>
+    </div><div class="col col-md-6 ">
+<a class="col col-md-6 btn btn-success fw-bold py-3 px-4" href="https://apps.apple.com/id/app/polri-super-app/id1617509708?l=id" role="button">App Store</a>
+    </div>
+    
+</div>
+  </div>
+    
+</div>
+</section>
+
+<!-- /col -->
+</div>
+  <!-- kontend -->
+  </main>
+  <!-- FOOTER-->
+  <div include-html="../include/footer.html"></div>
+  <div class="back-top back-top-show"><i class="bi bi-arrow-up-short"></i></div>
+  <script>
+includeHTML();
+</script>
+  <script src="../dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../css/functions.js"></script>
+ </body>
+</html>

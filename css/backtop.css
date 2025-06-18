@@ -1,0 +1,63 @@
+.back-top {
+  cursor: pointer;
+  position: fixed !important;
+  bottom: 40px;
+  right: 40px;
+  display: block;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: $transition-base;
+  background: #ff980085;
+  color: #000000a6;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  line-height: 48px;
+  text-align: center;
+  i{
+    font-size: 2rem;
+    vertical-align: middle;
+  }
+  &:hover{
+    background: #FF9800;
+    color: #000000;
+  }
+  &.back-top-show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.kunjungan {
+    text-align: left;
+    margin-left: 15%;
+}
+@include media-breakpoint-down(md) {
+  .back-top {
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    i{
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 500px) {
+.back-top {
+  left: 40px;
+  bottom: 50px;
+}
+.kunjungan {
+    /* bottom: 40px; */
+    /* left: 40px; */
+    /* position: fixed; */
+    /* margin-left: 40px; */
+    padding-right: 40px;
+    text-align: right;
+}
+}
+

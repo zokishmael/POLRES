@@ -1,0 +1,39 @@
+/* https://tribratanews.papua.polri.go.id/search/boven+digoel/feed/rss2/ */
+
+.tribata {
+    max-height: 490px;
+    overflow: hidden;
+}
+.feedinsta {
+    max-height: 720px;
+    overflow: hidden;
+}
+.feedyt {
+    max-height: 570px;
+    overflow: hidden;
+}
+.feedtok {
+    max-height: 380px;
+    overflow: hidden;
+}
+@media (max-width: 500px) {
+	
+.tribata {
+    max-height: 480px;
+    overflow: hidden;
+}
+.feedinsta {
+    max-height: 580px;
+    overflow: hidden;
+}
+.feedyt {
+    max-height: 880px;
+    overflow: hidden;
+}
+.feedtok {
+    max-height: 470px;
+    overflow: hidden;
+}
+
+}
+
